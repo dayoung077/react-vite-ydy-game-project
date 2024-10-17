@@ -19,6 +19,7 @@ const routes = [
       },
     ],
   },
+
   {
     path: "/lotto",
     element: <App />,
@@ -31,6 +32,7 @@ const routes = [
       },
     ],
   },
+
   {
     path: "/boards",
     element: <App />,
@@ -41,11 +43,13 @@ const routes = [
         loader: () => "게시판",
         element: <BoardListPage />,
       },
+
       {
         path: "/boards/write",
         loader: () => "글쓰기",
         element: <BoardWritePage />,
       },
+
       {
         path: "/boards/:bid",
         loader: () => "글업데이트",
